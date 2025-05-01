@@ -1,0 +1,1552 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Tajawal', sans-serif; /* Default Arabic font */
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body[lang="ar"] {
+    font-family: 'Tajawal', sans-serif; /* Arabic font */
+}
+
+body[lang="en"] {
+    font-family: 'Merriweather', serif; /* English font */
+}
+
+/* تحسين شريط التنقل */
+nav {
+    background-color: brown;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav .logo {
+    color: bisque;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 5px 0;
+}
+
+nav ul li a {
+    color: bisque;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffcc99;
+}
+
+/* تحسين تصميم الهيدر */
+header {
+    background-color: brown;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: bisque;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: slideIn 1.5s ease-in-out;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero p {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: slideIn 1.5s ease-in-out;
+    color: brown;
+    font-weight: bold;
+    font-size: 28px;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    line-height: 1.5;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.hero button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #ff5722;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.hero button:hover {
+    background-color: #e64a19;
+}
+
+/* تحسين النصوص */
+.hero p {
+    color: brown;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    line-height: 1.5;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+/* تحسين الزر */
+.main button {
+    width: 180px;
+    height: 60px;
+    color: white;
+    background-color: #ff5722;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px; /* مسافة بين الزر والنص */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: buttonFadeIn 1.5s ease-in-out; /* إضافة أنميشن للزر */
+}
+
+.main button:hover {
+    cursor: pointer;
+    background-color: #e64a19;
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* إضافة ظل عند التمرير */
+}
+
+.text {
+    width: 50%;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* تحسين تصميم كوب الشاي */
+#cup {
+    width: 30%;
+    animation: float 3s ease-in-out infinite;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contener {
+    position: relative;
+    top: 50px;
+    left: 0;
+    margin: auto;
+}
+
+.cup {
+    position: relative;
+    width: 230px;
+    height: 250px;
+    background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.top {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+    border-radius: 50%;
+}
+
+.cir {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: 50px;
+    background: linear-gradient(to left, #f9f9f9, #d9d9d9);
+    border-radius: 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.tea {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#c57e65, #e28462);
+    border-radius: 50%;
+}
+
+.handle {
+    position: absolute;
+    right: -60px;
+    top: 30px;
+    width: 140px;
+    height: 140px;
+    border: 25px solid #dcdcdc;
+    border-left: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-radius: 50%;
+    transform: rotate(45deg);
+}
+
+.plate {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 200px;
+    background: linear-gradient(to right, #f9f9f9, #e7e7e7);
+    border-radius: 50%;
+    box-shadow: 0 35px 35px rgba(0, 0, 0, 0.2);
+}
+
+.plate::before {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    background: linear-gradient(to left, #f9f9f9, #e7e7e7);
+}
+
+.plate::after {
+    content: '';
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    top: 30px;
+    right: 30px;
+    border-radius: 50%;
+    background: radial-gradient(rgba(0, 0, 0, 0.2) 25%, transparent, transparent);
+}
+
+.vapour {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    padding: 0 20px;
+}
+
+.vapour span {
+    position: relative;
+    bottom: 50px;
+    display: block;
+    margin: 0 2px 50px;
+    min-width: 6px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    animation: animat 5s linear infinite;
+    opacity: 0;
+    filter: blur(10px);
+    animation-delay: calc(var(--i) * -0.5%);
+}
+
+/* تحسين تصميم كوب الشاي لشاشات الهواتف */
+@media (max-width: 768px) {
+    #cup {
+        width: 50%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: float 3s ease-in-out infinite;
+    }
+
+    .cup {
+        width: 140px;
+        height: 160px;
+        background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+        border-bottom-left-radius: 40%;
+        border-bottom-right-radius: 40%;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .handle {
+        width: 70px;
+        height: 70px;
+        border: 15px solid #dcdcdc;
+        border-left: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        right: -25px;
+        top: 20px;
+    }
+
+    .plate {
+        width: 220px;
+        height: 110px;
+        background: linear-gradient(to right, #f9f9f9, #e7e7e7);
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .vapour span {
+        min-width: 4px;
+        height: 100px;
+        filter: blur(8px);
+    }
+}
+
+@media (max-width: 480px) {
+    #cup {
+        width: 40%;
+        margin-top: 20px;
+    }
+
+    .cup {
+        width: 120px;
+        height: 140px;
+        border-bottom-left-radius: 35%;
+        border-bottom-right-radius: 35%;
+    }
+
+    .handle {
+        width: 50px;
+        height: 50px;
+        border: 10px solid #dcdcdc;
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        right: -20px;
+        top: 15px;
+    }
+
+    .plate {
+        width: 180px;
+        height: 90px;
+    }
+
+    .vapour span {
+        min-width: 3px;
+        height: 80px;
+        filter: blur(6px);
+    }
+}
+
+/* إخفاء الكوب واستبداله بأيقونة كوب قهوة نابض لشاشات صغيرة */
+@media (max-width: 768px) {
+    #cup {
+        display: none;
+    }
+
+    .hero::after {
+        content: '\f0f4'; /* Font Awesome coffee cup icon */
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        display: block;
+        font-size: 80px;
+        color: #ff5722;
+        margin: 20px auto;
+        text-align: center;
+        animation: pulse 1.5s infinite ease-in-out;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero::after {
+        font-size: 60px;
+    }
+}
+
+/* أنميشن النبض */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* تحسين تصميم كوب الشاي لشاشات الهواتف */
+@media (max-width: 768px) {
+    #cup {
+        width: 40%;
+        margin-top: 20px;
+    }
+
+    .cup {
+        width: 150px;
+        height: 180px;
+    }
+
+    .handle {
+        width: 80px;
+        height: 80px;
+        border: 15px solid #dcdcdc;
+        right: -30px;
+        top: 15px;
+    }
+
+    .plate {
+        width: 250px;
+        height: 125px;
+    }
+}
+
+@media (max-width: 480px) {
+    #cup {
+        width: 30%;
+        margin-top: 20px;
+    }
+
+    .cup {
+        width: 120px;
+        height: 140px;
+    }
+
+    .handle {
+        width: 60px;
+        height: 60px;
+        border: 10px solid #dcdcdc;
+        right: -20px;
+        top: 10px;
+    }
+
+    .plate {
+        width: 200px;
+        height: 100px;
+    }
+}
+
+/* تحسين تصميم الأصناف */
+.categoris {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #f9f9f9, #e7e7e7);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.categoris .title {
+    color: brown;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+}
+
+.types {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    align-items: center;
+}
+
+.type {
+    color: white;
+    background-color: brown;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.type:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#coff:hover {
+    background-image: url('images/0559699352bf0b45e518775d50b627fa.jpg');
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+    color: brown;
+    font-size: 20px;
+}
+
+#hot:hover {
+    background-image: url('images/1404f3c59da431a4e7295549be79566b.jpg');
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+    color: brown;
+    font-size: 20px;
+}
+
+#cold:hover {
+    background-image: url('images/f4ba825ee241e59580f46eb26c145345.jpg');
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+    color: brown;
+    font-size: 20px;
+}
+
+#frish:hover {
+    background-image: url('images/a99d8ba23ff4bea1a84b6024e6de2c63.jpg');
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+    color: brown;
+    font-size: 20px;
+}
+
+#tea:hover {
+    background-image: url('images/ae70df8240fbfe842398aa089c6fb97d.jpg');
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+    color: brown;
+    font-size: 20px;
+}
+
+.items {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+.teacoffeItem {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: center;
+}
+
+.frishItem {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: center;
+}
+
+.hotItem {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: center;
+}
+
+.coldItem {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: center;
+}
+
+.teacoffe {
+    background-image: url('images/1404f3c59da431a4e7295549be79566b.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+}
+
+.frishs {
+    background-image: url('images/a99d8ba23ff4bea1a84b6024e6de2c63.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+}
+
+.hots {
+    background-image: url('images/bc8b45dc72bf9f9d44d291c10c3be43f.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+}
+
+.colds {
+    background-image: url('images/905158519c505f4561281a8ae6c75af5.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+}
+
+/* تحسين تصميم العناصر */
+.items h2 {
+    color: brown;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.item {
+    background-size: cover;
+    width: 250px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.frishItem .item {
+    background-image: url('images/b7ae1fefcea22687a16df710c1b26d6f.jpg');
+    background-size: cover;
+    width: 250px;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px rgb(56, 56, 56);
+    transition: 0.3s;
+}
+
+.hotItem .item {
+    background-image: url('images/8db13a8e894d958a667983c79ee410f2.jpg');
+    background-size: cover;
+    width: 250px;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px rgb(56, 56, 56);
+    transition: 0.3s;
+}
+
+.coldItem .item {
+    background-image: url('images/dc541ed718fce0a050568a5490aad715.jpg');
+    background-size: cover;
+    width: 250px;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px rgb(56, 56, 56);
+    transition: 0.3s;
+}
+
+.item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.contenar {
+    position: relative;
+    top: 81%;
+    background-color: bisque;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    padding: 3px;
+}
+
+.contenar .itemName {
+    color: brown;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.contenar .desc {
+    color: #e77d57;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.contenar .price {
+    color: brown;
+}
+
+@keyframes animat {
+    0% {
+        transform: translateY(0) scaleX(1);
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-150px) scaleX(2);
+    }
+    95% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-300px) scaleX(3);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* أنميشن للزر عند ظهوره */
+@keyframes buttonFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* أنميشن تفاعلي عند تحميل الصفحة */
+@keyframes pageLoad {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* إضافة تأثير عند التمرير */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.categoris, .items {
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.categoris {
+    animation-delay: 0.5s;
+}
+
+.items {
+    animation-delay: 1s;
+}
+
+body {
+    animation: pageLoad 1s ease-in-out; /* تطبيق أنميشن عند تحميل الصفحة */
+    scroll-behavior: smooth;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* تصميم قسم "عن المقهى" */
+.about {
+    background: linear-gradient(to right, #f9f9f9, #e7e7e7);
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 50px; /* إضافة مسافة بين القسم السابق */
+}
+
+.about h2 {
+    color: brown;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.about p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* تحسين قسم "الشهادات" */
+.testimonials {
+    background: linear-gradient(to right, #f9f9f9, #e7e7e7);
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+    top: 100%;
+    bottom: 0;
+}
+
+.testimonials h2 {
+    color: brown;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.testimonials .testimonial {
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.testimonials .testimonial::before {
+    content: "“";
+    font-size: 40px;
+    color: brown;
+    position: relative;
+    top: -10px;
+    left: -10px;
+}
+
+.testimonials .testimonial::after {
+    content: "”";
+    font-size: 40px;
+    color: brown;
+    position: relative;
+    bottom: -10px;
+    right: -10px;
+}
+
+/* تحسين قسم "النشرة الإخبارية" */
+.newsletter {
+    background-color: #ff5722;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.newsletter p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: brown;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.newsletter button:hover {
+    background-color: #e64a19;
+}
+
+/* تصميم قسم "التواصل" */
+.contact {
+    background-color: #ff5722;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-icons a {
+    color: white;
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* تعديل الفوتر */
+footer {
+    background-color: brown;
+    color: bisque;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 50px; /* إضافة مسافة بين القسم السابق */
+    font-size: 12px;
+}
+
+footer .social-icons {
+    margin-bottom: 10px;
+}
+
+footer .social-icons a {
+    color: bisque;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+footer .social-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* تحسين تصميم صفحة المنتجات */
+.products-page {
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #f9f9f9, #e7e7e7);
+    text-align: center;
+}
+
+.products-page h1 {
+    color: brown;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.products-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    height: auto;
+}
+
+.product-card .details {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-card .details h3 {
+    color: brown;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-card .details p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.product-card .details .price {
+    color: #ff5722;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-card .details button {
+    padding: 12px 25px;
+    font-size: 16px;
+    color: white;
+    background-color: brown;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.product-card .details button:hover {
+    background-color: #e64a19;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* تصميم سكاشن إضافية */
+.services {
+    background: linear-gradient(to right, #f9f9f9, #e7e7e7);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    color: brown;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.services .service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.services .service-item {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.services .service-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.services .service-item h3 {
+    color: brown;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.services .service-item p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* تصميم قسم "المدونة" */
+.blog {
+    background: linear-gradient(to bottom, #e7e7e7, #f9f9f9);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.blog h2 {
+    color: brown;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.blog .posts {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.blog .post {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.blog .post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    height: auto;
+}
+
+.blog .post .content {
+    padding: 15px;
+    text-align: left;
+}
+
+.blog .post .content h3 {
+    color: brown;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.blog .post .content p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.blog .post:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* تصميم قسم السلة */
+.cart {
+    background: linear-gradient(to right, #f9f9f9, #e7e7e7);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cart h2 {
+    color: brown;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    text-align: center;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.cart-item button {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: white;
+    background-color: #ff5722;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cart-item button:hover {
+    background-color: #e64a19;
+}
+
+.cart-total {
+    font-size: 20px;
+    font-weight: bold;
+    color: brown;
+}
+
+/* تحسين التصميم ليكون متجاوبًا */
+body {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 5px 0;
+}
+
+.hero {
+    padding: 20px;
+    text-align: center;
+}
+
+.hero p {
+    font-size: 28px;
+}
+
+.hero button {
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.products-grid, .posts, .service {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.product-card img, .blog .post img {
+    height: auto;
+}
+
+.cart-items {
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-item {
+    flex-direction: column;
+    text-align: center;
+}
+
+.cart-item img {
+    margin-bottom: 10px;
+}
+
+footer {
+    font-size: 12px;
+}
+
+/* تحسين التصميم لشاشات الهواتف */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .logo {
+        margin-bottom: 10px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .hero p {
+        font-size: 24px;
+    }
+
+    .hero button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .products-grid, .posts, .service {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card, .blog .post, .service-item {
+        margin: 10px 0;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart-item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+}
+
+/* تحسين التصميم لشاشات صغيرة جدًا */
+@media (max-width: 480px) {
+    .hero p {
+        font-size: 20px;
+    }
+
+    .hero button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .cart-item img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cart-item button {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}
+
+/* تحسين تصميم وموقع أزرار التبديل */
+.toggle-buttons {
+    position: fixed;
+    top: 80px; /* تعديل الموضع لتجنب تغطية الهيدر */
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.toggle-buttons button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-buttons button:hover {
+    background-color: #e64a19;
+    transform: scale(1.1);
+}
+
+.toggle-buttons button:active {
+    transform: scale(1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode nav {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+body.dark-mode footer {
+    background-color: #1e1e1e;
+    color: #bdbdbd;
+}
+
+body.dark-mode .product-card {
+    background-color: #242424;
+    color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+body.dark-mode .product-card button {
+    background-color: #ff5722;
+}
+
+body.dark-mode .product-card button:hover {
+    background-color: #e64a19;
+}
+
+body.dark-mode .hero {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    text-shadow: none;
+}
+
+body.dark-mode .service-item {
+    background-color: #242424;
+    color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+body.dark-mode .service-item:hover {
+    background-color: #2a2a2a;
+}
+
+body.dark-mode .testimonial {
+    background-color: #242424;
+    color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+body.dark-mode .contact {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+body.dark-mode .contact-icons a {
+    color: #ff5722;
+}
+
+body.dark-mode .contact-icons a:hover {
+    color: #e64a19;
+}
+
+body.dark-mode .products-page,
+body.dark-mode .about,
+body.dark-mode .services,
+body.dark-mode .blog,
+body.dark-mode .testimonials,
+body.dark-mode .contact {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+body.dark-mode .product-card,
+body.dark-mode .service-item,
+body.dark-mode .testimonial {
+    background-color: #242424;
+    color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+body.dark-mode .product-card button,
+body.dark-mode .service-item:hover,
+body.dark-mode .testimonial:hover {
+    background-color: #ff5722;
+}
+
+body.dark-mode .product-card button:hover {
+    background-color: #e64a19;
+}
+
+body.dark-mode .contact-icons a {
+    color: #ff5722;
+}
+
+body.dark-mode .contact-icons a:hover {
+    color: #e64a19;
+}
+
+body.dark-mode .toggle-buttons button {
+    background-color: #242424;
+    color: #ff5722;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+body.dark-mode .toggle-buttons button:hover {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .cart-item {
+    background-color: #242424;
+    color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+body.dark-mode .cart-item button {
+    background-color: #ff5722;
+}
+
+body.dark-mode .cart-item button:hover {
+    background-color: #e64a19;
+}
+
+body.dark-mode .newsletter {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+body.dark-mode .newsletter button {
+    background-color: #ff5722;
+}
+
+body.dark-mode .newsletter button:hover {
+    background-color: #e64a19;
+}
+
+body.dark-mode .blog .post {
+    background-color: #242424;
+    color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+body.dark-mode .blog .post:hover {
+    background-color: #2a2a2a;
+}
